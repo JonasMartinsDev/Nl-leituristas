@@ -1,6 +1,6 @@
 {
   "name": "Notas de Leiturista",
-  "short_name": "App para ajudar os leituristas nas tarefas diárias",
+  "short_name": "Notas de Leiturista",
   "lang": "pt-BR",
   "start_url": "https://nl-leituristas.vercel.app",
   "display": "standalone",
