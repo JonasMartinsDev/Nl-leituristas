@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Notas de Leiturista" />
-        <meta name="apple-mobile-web-app-title" content="App para ajudar os leituristas nas tarefas diárias" />
+        <meta name="apple-mobile-web-app-title" content="Notas de Leiturista" />
         <meta name="theme-color" content="#FFFFFF" />
         <meta name="msapplication-navbutton-color" content="#FFFFFF" />
         <meta
