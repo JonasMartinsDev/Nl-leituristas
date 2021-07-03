@@ -23,68 +23,43 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
         />
-        <meta name="application-name" content="Notas de Leiturista" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Notas de Leiturista" />
-        <meta name="description" content="Ajudar os leituristas na execução das suas tarefas." />
-        <meta name="format-detection" content="telephone=no" />
+        <link rel="manifest" href="manifest.json" />
+
         <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="Notas de Leiturista" />
+        <meta name="apple-mobile-web-app-title" content="Notas de Leiturista" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="msapplication-navbutton-color" content="#FFFFFF" />
         <meta
-          name="msapplication-config"
-          content="/img/cemig.png"
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
         />
-        <meta name="msapplication-TileColor" content="#2B5797" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="theme-color" content="#000000" />
-
-        <link
-          rel="apple-touch-icon"
-          href="/img/cemig.png"
+        <meta
+          name="msapplication-starturl"
+          content="https://nl-leituristas.vercel.app"
         />
-        <link
-          rel="apple-touch-icon"
-          sizes="152x152"
-          href="/img/cemig.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/img/cemig.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="167x167"
-          href="/img/cemig.png"
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
         <link
           rel="icon"
           type="image/png"
-          sizes="32x32"
+          sizes="192x192"
           href="/img/cemig.png"
         />
         <link
-          rel="icon"
+          rel="apple-touch-icon"
           type="image/png"
-          sizes="16x16"
+          sizes="192x192"
           href="/img/cemig.png"
         />
-        <link rel="manifest" href="/static/manifest.json" />
-        <link
-          rel="mask-icon"
-          href="/img/cemig.png"
-          color="#5bbad5"
-        />
-        <link rel="shortcut icon" href="/img/cemig.png" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
         />
-
-        
-       
-       
       </Head>
       <ThemeProvider theme={theme}>
         <AppContainer>
