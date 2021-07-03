@@ -23,12 +23,4 @@ export const FooterTitle = styled(Typography)`
   font-weight: bold;
 `;
 
-export const AppList = styled("ul")`
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  gap: ${({ theme }) => theme.spacing()};
-  img {
-    width: 7.6rem;
-  }
-`;
+

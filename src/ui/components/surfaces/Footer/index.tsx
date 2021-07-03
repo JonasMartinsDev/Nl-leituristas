@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterStyled, FooterContainer, FooterTitle, AppList } from "./styles";
+import { FooterStyled, FooterContainer, FooterTitle } from "./styles";
 import { Typography, Box } from "@material-ui/core";
 
 const Footer = () => {
@@ -13,22 +13,6 @@ const Footer = () => {
             para cada situação de sua tarefa.
           </Typography>
         </Box>
-
-        <div>
-          <FooterTitle>Baixe nossos aplicativos</FooterTitle>
-          <AppList>
-            <li>
-              <a href={"/"} target={"_blank"} rel={"noopener noreferrer"}>
-                <img src={"/img/logos/app-store.png"} alt={"App Store"} />
-              </a>
-            </li>
-            <li>
-              <a href={"/"} target={"_blank"} rel={"noopener noreferrer"}>
-                <img src={"/img/logos/google-play.png"} alt={"Google Play"} />
-              </a>
-            </li>
-          </AppList>
-        </div>
       </FooterContainer>
     </FooterStyled>
   );
