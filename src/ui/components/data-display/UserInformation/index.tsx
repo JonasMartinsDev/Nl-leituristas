@@ -4,8 +4,8 @@ import {
   UserName,
   UserDescription,
   AvatarStyled,
-  RatingStyled,
 } from "./styles";
+
 
 import { Typography } from "@material-ui/core";
 
@@ -22,7 +22,7 @@ const UserInformation: React.FC<UserInformationProps> = ({
 }) => {
   return (
     <UserInformationContainer>
-      <AvatarStyled>{name}</AvatarStyled>
+      <AvatarStyled >{name}</AvatarStyled>
       <UserName>{name}</UserName>
       {reading ? (
         <Typography variant={"subtitle2"} color={"secondary"}>

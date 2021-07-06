@@ -3,7 +3,7 @@
   "short_name": "Notas de Leiturista",
   "lang": "pt-BR",
   "start_url": "https://nl-leituristas.vercel.app",
-  "display": "standalone",
+  "display": "fullScreen",
   "theme_color": "#FFFFFF",
   "icons": [
     {
