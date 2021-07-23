@@ -9,7 +9,7 @@ export const Title = styled("div")`
   margin: 0;
   color: ${({ theme }) => theme.palette.primary.main};
   font-size: ${({ theme }) => theme.typography.h6.fontSize};
-  font-weight: 600;
+  font-weight: 400;
 
   ${({ theme }) => theme.breakpoints.down("md")} {
     font-size: ${({ theme }) => theme.typography.body1.fontSize};
