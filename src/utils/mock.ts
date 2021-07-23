@@ -8,7 +8,7 @@ export default [
   {
     id: 2,
     name: "5109",
-    description: "Leitura impedida por cães/animais",
+    description: "Instalação desabitada/vazia",
     reading: false,
   },
   {
@@ -131,6 +131,12 @@ export default [
     id: 22,
     name: "3205",
     description: "End. instalação n/localizado/Instal alocada errada",
+    reading: true,
+  },
+  {
+    id: 22,
+    name: "3311",
+    description: "Medidor eletrônico desprogramado, sem informação de cliente ou vizinho o por que esta apagado",
     reading: true,
   }
 ];

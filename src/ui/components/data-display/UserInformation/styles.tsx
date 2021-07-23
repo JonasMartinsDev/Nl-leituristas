@@ -3,16 +3,19 @@ import { Avatar, Rating } from "@material-ui/core";
 
 export const UserInformationContainer = styled("div")`
   display: grid;
+  position: relative;
   grid-template-columns: 60px 1fr;
   grid-template-rows: repeat(3, auto);
-  grid-template-areas:
+  box-shadow: rgba(107, 42, 238, 0.02) 0px 30px 60px -12px inset, rgba(107, 42, 238, 0.2) 0px 18px 36px -18px inset; 
+   grid-template-areas:
     "avatar name"
     "avatar rating"
     "avatar description";
   background-color: ${({ theme }) => theme.palette.grey[50]};
   padding: ${({ theme }) => theme.spacing(3)};
-  gap: ${({ theme }) => theme.spacing(0.5) + " " + theme.spacing(2)};
+  gap: ${({ theme }) => theme.spacing(1) + " " + theme.spacing(2)};
   align-items: center;
+
 `;
 
 export const UserName = styled("div")`
