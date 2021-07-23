@@ -6,7 +6,6 @@ export const UserInformationContainer = styled("div")`
   position: relative;
   grid-template-columns: 60px 1fr;
   grid-template-rows: repeat(3, auto);
-  box-shadow: rgba(107, 42, 238, 0.02) 0px 30px 60px -12px inset, rgba(107, 42, 238, 0.2) 0px 18px 36px -18px inset; 
    grid-template-areas:
     "avatar name"
     "avatar rating"
