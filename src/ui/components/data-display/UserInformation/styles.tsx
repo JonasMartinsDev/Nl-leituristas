@@ -10,7 +10,6 @@ export const UserInformationContainer = styled("div")`
     "avatar name"
     "avatar rating"
     "avatar description";
-  background-color: ${({ theme }) => theme.palette.primary.contrastText};
   padding: ${({ theme }) => theme.spacing(3)};
   gap: ${({ theme }) => theme.spacing(1) + " " + theme.spacing(2)};
   align-items: center;
@@ -27,6 +26,8 @@ export const AvatarStyled = styled(Avatar)`
   width: 100%;
   height: initial;
   aspect-ratio: 1;
+  background-color: ${({ theme }) => theme.palette.secondary.light};
+
 `;
 
 export const UserDescription = styled("div")`
