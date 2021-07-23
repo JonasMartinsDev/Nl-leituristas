@@ -14,7 +14,6 @@ export const UserInformationContainer = styled("div")`
   padding: ${({ theme }) => theme.spacing(3)};
   gap: ${({ theme }) => theme.spacing(1) + " " + theme.spacing(2)};
   align-items: center;
-
 `;
 
 export const UserName = styled("div")`
