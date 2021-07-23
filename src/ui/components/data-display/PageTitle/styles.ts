@@ -18,9 +18,9 @@ export const Title = styled("div")`
 
 export const Description = styled("h3")`
   margin: ${({ theme }) => theme.spacing(1.5) + "" + "0"};
-  color: ${({ theme }) => theme.palette.text.primary};
+  color: ${({ theme }) => theme.palette.text.secondary};
   font-size: ${({ theme }) => theme.typography.body1.fontSize};
-  font-weight: normal;
+  font-weight: lighter;
 
   ${({ theme }) => theme.breakpoints.down("md")} {
     font-size: ${({ theme }) => theme.typography.body2.fontSize};

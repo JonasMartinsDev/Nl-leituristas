@@ -4,7 +4,7 @@
   "lang": "pt-BR",
   "start_url": "https://nl-leituristas.vercel.app",
   "display": "fullScreen",
-  "theme_color": "#FFFFFF",
+  "theme_color": "#0D1117",
   "icons": [
     {
       "src": "/img/cemig.png",

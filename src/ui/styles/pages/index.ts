@@ -13,6 +13,9 @@ export const FormElementsContainer = styled("div")`
 export const NlsPaper = styled(Paper)`
   padding: ${({ theme }) => theme.spacing(7)};
   margin: 0 auto ${({ theme }) => theme.spacing(10)};
+  background-color: ${({ theme }) => theme.palette.primary.contrastText};
+
+
 
   ${({ theme }) => theme.breakpoints.down("md")} {
     &.MuiPaper-root {
@@ -34,8 +37,6 @@ export const NlsContainer = styled("div")`
   ${({ theme }) => theme.breakpoints.down("md")} {
     margin-left: ${({ theme }) => theme.spacing(-2)};
     margin-right: ${({ theme }) => theme.spacing(-2)};
-    > :nth-of-type(odd) {
-      background-color: ${({ theme }) => theme.palette.background.paper};
-    }
+    
   }
 `;

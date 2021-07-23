@@ -4,7 +4,6 @@ import { ThemeProvider } from "@material-ui/core";
 import theme from "ui/themes";
 import Head from "next/head";
 
-import Header from "ui/components/surfaces/Header";
 import Footer from "ui/components/surfaces/Footer";
 import { AppContainer } from "@styles/pages/container";
 
@@ -63,7 +62,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <AppContainer>
-          <Header />
           <Component {...pageProps} />
           <Footer />
         </AppContainer>
