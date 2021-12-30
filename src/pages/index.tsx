@@ -22,7 +22,7 @@ export default function Home() {
   const [nls, setNls] = useState([]);
   const [allNls, setAllNls] = useState([]);
   const [page, setPage] = useState(0);
-  const [postsPerPage] = useState(10);
+  const [postsPerPage] = useState(20);
   const [searchValue, setSearchValue] = useState("");
 
   const handleLoadPosts = useCallback(async (page, postsPerPage) => {

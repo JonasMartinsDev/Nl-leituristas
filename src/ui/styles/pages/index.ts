@@ -26,17 +26,9 @@ export const NlsPaper = styled(Paper)`
 `;
 
 export const NlsContainer = styled("div")`
-  display: grid;
-  grid-template-columns: 1fr;
-
   ${({ theme }) => theme.breakpoints.up("md")} {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: ${({ theme }) => theme.spacing(6)};
-  }
-
-  ${({ theme }) => theme.breakpoints.down("md")} {
-    margin-left: ${({ theme }) => theme.spacing(-2)};
-    margin-right: ${({ theme }) => theme.spacing(-2)};
-    
   }
 `;

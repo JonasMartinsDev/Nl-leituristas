@@ -68,7 +68,7 @@ export default [
    {
     id: 12,
     name: "1505",
-    description: "Suspeita de medidor defeituoso/avariado/manipulado/parado",
+    description: "Suspeita de medidor defeituoso/\navariado/manipulado/parado",
     reading: true,
   },
  {
@@ -104,7 +104,7 @@ export default [
 {
     id: 18,
     name: "3511",
-    description: "Suspeita de medidor defeituoso/avariado/manipulado/parado",
+    description: "Suspeita de medidor defeituoso/\navariado/manipulado/parado",
     reading: false,
   },
   {

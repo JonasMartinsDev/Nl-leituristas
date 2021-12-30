@@ -2,8 +2,14 @@ import { experimentalStyled as styled } from "@material-ui/core/styles";
 import { Avatar, Rating } from "@material-ui/core";
 
 export const UserInformationContainer = styled("div")`
+  
+  & + &  {
+    margin-top: 10px
+  }
+
   display: grid;
   position: relative;
+  border-radius: 100px 20px 20px 100px;
   grid-template-columns: 60px 1fr;
   grid-template-rows: repeat(3, auto);
    grid-template-areas:
@@ -12,7 +18,6 @@ export const UserInformationContainer = styled("div")`
     "avatar description";
   padding: ${({ theme }) => theme.spacing(3)};
   gap: ${({ theme }) => theme.spacing(1) + " " + theme.spacing(2)};
-  align-items: center;
   transition: 1s ease-out;
 
   &:hover {
@@ -37,6 +42,7 @@ export const AvatarStyled = styled(Avatar)`
 
 export const UserDescription = styled("div")`
   grid-area: description;
+  display: flex;
   color: ${({ theme }) => theme.palette.text.secondary};
   font-size: ${({ theme }) => theme.typography.body2.fontSize};
 `;
