@@ -5,8 +5,8 @@
   "scope": "/",
   "start_url": "https://nl-leituristas.vercel.app",
   "name": "Notas de Leiturista",
+  "lang": "pt-BR",
   "short_name": "Notas de Leiturista",
-  "description": "Encontre a melhor nota de leiturista para cada situa\u00e7\u00e3o.",
   "icons": [
       {
           "src": "/icon-192x192.png",
@@ -28,5 +28,6 @@
           "sizes": "512x512",
           "type": "image/png"     
          }
-  ]
+  ],
+  "prefer_related_applications": true
 }
