@@ -15,6 +15,7 @@ import {
 
 import { Button, Typography, Container } from "@material-ui/core";
 import { loadPosts } from "utils/load-posts";
+import { removeAcento } from "utils/removeAcento";
 
 // import useIndex from "data/hooks/pages/useIndex.page";
 
@@ -53,8 +54,7 @@ export default function Home() {
   const noMorePosts = page + postsPerPage >= allNls.length;
   const filteredPosts = searchValue
     ? allNls.filter((post) => {
-        return post.description
-          .toLowerCase()
+        return removeAcento(post.description)
           .includes(searchValue.toLowerCase());
       })
     : nls;
