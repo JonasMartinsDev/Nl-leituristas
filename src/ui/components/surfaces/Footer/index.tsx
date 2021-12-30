@@ -1,13 +1,13 @@
 import React from "react";
-import { FooterStyled, FooterContainer, FooterTitle } from "./styles";
-import { Typography, Box } from "@material-ui/core";
+import { FooterStyled, FooterContainer } from "./styles";
+import { Typography, Box, Link } from "@material-ui/core";
 
 const Footer = () => {
   return (
     <FooterStyled>
       <FooterContainer>
         <Box sx={{ maxWidth: "400px" }}>
-          <FooterTitle>Quem somos</FooterTitle>
+          <Link href="https://meu-portfolio-lovat.vercel.app/"  variant='body1' color="inherit">Developer Jonas Martins</Link>
           <Typography variant={"body2"} sx={{ mt: 2 }}>
             NL-Leiturista te ajuda a encontrar as Notas de leiturista perfeita
             para cada situação de sua tarefa.

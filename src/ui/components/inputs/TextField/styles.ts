@@ -3,9 +3,13 @@ import { TextField } from "@material-ui/core";
 
 export const TextFieldStyled = styled(TextField)`
   .MuiInputBase-root {
-    background-color: ${({ theme }) => theme.palette.secondary.light};
+    background-color: #090c10;
+    align-items: center;
+
   }
+
   .MuiOutlinedInput-notchedOutline {
-    border-color: ${({ theme }) => theme.palette.grey[100]};
+    border-color: #1f242d;
+    border-radius: 12px;
   }
 `;

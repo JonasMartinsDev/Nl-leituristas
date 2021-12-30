@@ -2,7 +2,6 @@ import React from "react";
 
 import { useState, useCallback, useEffect } from "react";
 
-import { loadPosts } from "utils/load-posts";
 
 import SafeEnvironment from "ui/components/feedback/SafeEnvironment";
 import PageTitle from "ui/components/data-display/PageTitle";
@@ -15,12 +14,11 @@ import {
 } from "ui/styles/pages/";
 
 import { Button, Typography, Container } from "@material-ui/core";
+import { loadPosts } from "utils/load-posts";
 
 // import useIndex from "data/hooks/pages/useIndex.page";
 
 export default function Home() {
-  // const { text, setText, nls, filteredNls, buscarNls } = useIndex();
-
   const [nls, setNls] = useState([]);
   const [allNls, setAllNls] = useState([]);
   const [page, setPage] = useState(0);
@@ -71,7 +69,7 @@ export default function Home() {
       <Container>
         <FormElementsContainer>
           <TextField
-            label={"Digite a sua NL"}
+            label={"Pesquise pela NL (ex: embaçado)"}
             fullWidth
             variant={"outlined"}
             value={searchValue}

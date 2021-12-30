@@ -1,16 +1,32 @@
 {
-  "name": "Notas de Leiturista",
-  "short_name": "Notas de Leiturista",
-  "lang": "pt-BR",
+  "theme_color": "#37aee2",
+  "background_color": "#090c10",
+  "display": "fullscreen",
+  "scope": "/",
   "start_url": "https://nl-leituristas.vercel.app",
-  "display": "fullScreen",
-  "theme_color": "#0D1117",
+  "name": "Notas de Leiturista",
+  "short_name": "Cemig",
+  "description": "Encontre a melhor nota de leiturista para cada situa\u00e7\u00e3o.",
   "icons": [
-    {
-      "src": "/img/cemig.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ],
-  "prefer_related_applications": true
+      {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "img/png"
+      },
+      {
+          "src": "/icon-256x256.png",
+          "sizes": "256x256",
+          "type": "img/png"
+      },
+      {
+          "src": "/icon-384x384.png",
+          "sizes": "384x384",
+          "type": "img/png"
+      },
+      {
+          "src": "/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "img/png"
+      }
+  ]
 }

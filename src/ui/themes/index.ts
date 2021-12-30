@@ -3,26 +3,26 @@ import { createTheme } from "@material-ui/core";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#2AA9E0",
-      contrastText: '#0D1117'
+      main: "#37aee2",
+      contrastText: '#090c10'
     },
     secondary: {
-      light: "#21262D",
+      light: "#1f242d",
       main: "#02E7D9",
     },
     text: {
-      primary: "#707070",
-      secondary: "#C9D1D9",
+      primary: "#eff2f6",
+      secondary: "#93a1b6",
     },
     error: {
-      main: "#C53030",
+      main: "#e89797",
     },
     success: {
-      main: "#00D34D",
+      main: "#1aff75",
     },
   },
   typography: {
-    fontFamily: "Poppins",
+    fontFamily: "Sora",
   },
   shape: {
     borderRadius: "3px",
