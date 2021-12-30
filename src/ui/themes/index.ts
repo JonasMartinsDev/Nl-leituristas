@@ -3,7 +3,7 @@ import { createTheme } from "@material-ui/core";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#00e65b",
+      main: "#00E65B",
       contrastText: '#090c10'
     },
     secondary: {
@@ -18,7 +18,7 @@ const theme = createTheme({
       main: "#e89797",
     },
     success: {
-      main: "#1aff75",
+      main: "#00E65B",
     },
   },
   typography: {
