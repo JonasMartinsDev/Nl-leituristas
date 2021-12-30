@@ -63,8 +63,7 @@ export default function Home() {
     <>
       <SafeEnvironment />
       <PageTitle
-        title={"Conheça as Notas de leiturista"}
-        description={"Preencha e veja as Nl disponível"}
+        description={"Conheça as Notas de leiturista"}
       />
       <Container>
         <FormElementsContainer>

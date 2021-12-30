@@ -3,7 +3,7 @@ import { createTheme } from "@material-ui/core";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#37aee2",
+      main: "#00e65b",
       contrastText: '#090c10'
     },
     secondary: {
@@ -24,6 +24,7 @@ const theme = createTheme({
   typography: {
     fontFamily: "Sora",
   },
+
   shape: {
     borderRadius: "3px",
   },

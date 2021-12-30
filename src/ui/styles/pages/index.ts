@@ -11,7 +11,7 @@ export const FormElementsContainer = styled("div")`
 `;
 
 export const NlsPaper = styled(Paper)`
-  padding: ${({ theme }) => theme.spacing(7)};
+  padding: ${({ theme }) => theme.spacing(4)};
   margin: 0 auto ${({ theme }) => theme.spacing(10)};
   background-color: ${({ theme }) => theme.palette.primary.contrastText};
 
