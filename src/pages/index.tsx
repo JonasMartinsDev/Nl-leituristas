@@ -55,7 +55,7 @@ export default function Home() {
   const filteredPosts = searchValue
     ? allNls.filter((post) => {
         return removeAcento(post.description)
-          .includes(searchValue.toLowerCase());
+          .includes(removeAcento(searchValue));
       })
     : nls;
 
