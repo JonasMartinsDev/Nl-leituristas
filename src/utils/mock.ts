@@ -336,4 +336,11 @@ export default [
     reading: true,
   },
 
+  {
+    id: 55,
+    name: "1101",
+    description: "Leitura impedida por cães/ Animais",
+    reading: true,
+  },
+
 ]

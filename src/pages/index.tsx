@@ -14,7 +14,7 @@ import {
 } from "ui/styles/pages/";
 
 import { Button, Typography, Container } from "@material-ui/core";
-import { loadPosts } from "utils/load-posts";
+import mock from '../utils/mock'
 import { removeAcento } from "utils/removeAcento";
 
 // import useIndex from "data/hooks/pages/useIndex.page";
@@ -26,11 +26,10 @@ export default function Home() {
   const [postsPerPage] = useState(20);
   const [searchValue, setSearchValue] = useState("");
 
-  const handleLoadPosts = useCallback(async (page, postsPerPage) => {
-    const postsOccurrences = await loadPosts();
+  const handleLoadPosts = useCallback((page, postsPerPage) => {
 
-    setNls(postsOccurrences.slice(page, postsPerPage));
-    setAllNls(postsOccurrences);
+    setNls(mock.slice(page, postsPerPage));
+    setAllNls(mock);
   }, []);
   useEffect(() => {
     // console.log(new Date().toLocaleString('pt-BR'));
@@ -65,6 +64,7 @@ export default function Home() {
       <PageTitle
         description={"Conheça as Notas de leiturista"}
       />
+  
       <Container>
         <FormElementsContainer>
           <TextField
