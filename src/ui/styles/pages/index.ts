@@ -5,9 +5,15 @@ export const FormElementsContainer = styled("div")`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: ${({ theme }) => theme.spacing(5)};
+  gap: ${({ theme }) => theme.spacing(3)};
   max-width: 40rem;
-  margin: 0 auto ${({ theme }) => theme.spacing(7)};
+  margin: 0 auto ${({ theme }) => theme.spacing(2)};
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
 `;
 
 export const NlsPaper = styled(Paper)`

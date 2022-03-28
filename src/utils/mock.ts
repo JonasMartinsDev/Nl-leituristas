@@ -137,6 +137,8 @@ export default [
     name: "1203",
     description: "Instalação fora de sequencia",
     reading: true,
+    obervacao: `O pedido para mudança de uma IN para outro razão, deve seguir um padrão, conforme exemplo abaixo: MEDIDOR + POSIÇÃO AT = ANTES DP = DEPOIS`,
+    img: "/images/observacao1.jpeg"
   },
   {
     id: 24,

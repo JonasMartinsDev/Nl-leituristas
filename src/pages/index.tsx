@@ -15,7 +15,7 @@ import {
 
 import { Button, Typography, Container } from "@material-ui/core";
 import mock from '../utils/mock'
-import { removeAcento } from "utils/removeAcento";
+import { removeAccent } from "utils/removeAccent";
 
 // import useIndex from "data/hooks/pages/useIndex.page";
 
@@ -53,9 +53,9 @@ export default function Home() {
   const noMorePosts = page + postsPerPage >= allNls.length;
   const filteredPosts = searchValue
     ? allNls.filter((post) => {
-        return removeAcento(post.description)
-          .includes(removeAcento(searchValue));
-      })
+      return removeAccent(post.description)
+        .includes(removeAccent(searchValue));
+    })
     : nls;
 
   return (
@@ -64,7 +64,7 @@ export default function Home() {
       <PageTitle
         description={"Conheça as Notas de leiturista"}
       />
-  
+
       <Container>
         <FormElementsContainer>
           <TextField
@@ -74,6 +74,7 @@ export default function Home() {
             value={searchValue}
             onChange={handleChange}
           />
+
         </FormElementsContainer>
         <NlsPaper>
           <NlsContainer>
@@ -85,6 +86,8 @@ export default function Home() {
                     name={nl.name}
                     description={nl.description}
                     reading={nl.reading}
+                    obervacao={nl.obervacao}
+                    img={nl.img}
                   />
                 ))}
               </>
