@@ -17,7 +17,10 @@ import { Button, Typography, Container } from "@material-ui/core";
 import mock from '../utils/mock'
 import { removeAccent } from "utils/removeAccent";
 
-// import useIndex from "data/hooks/pages/useIndex.page";
+
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-144966040-2"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 export default function Home() {
   const [nls, setNls] = useState([]);

@@ -8,9 +8,7 @@ import Footer from "ui/components/surfaces/Footer";
 import { AppContainer } from "@styles/pages/container";
 
 
-import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-144966040-2"; // OUR_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
+
 
 function MyApp({ Component, pageProps }) {
   return (
