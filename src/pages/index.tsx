@@ -1,26 +1,17 @@
 import React from "react";
-
 import { useState, useCallback, useEffect } from "react";
 
+import { Header } from "components/Header";
+import UserInformation from "components/UserInformation";
 
-import SafeEnvironment from "ui/components/feedback/SafeEnvironment";
-import PageTitle from "ui/components/data-display/PageTitle";
-import UserInformation from "ui/components/data-display/UserInformation";
-import TextField from "ui/components/inputs/TextField";
-import {
-  FormElementsContainer,
-  NlsPaper,
-  NlsContainer,
-} from "ui/styles/pages/";
 
-import { Button, Typography, Container } from "@material-ui/core";
+import { TextField } from '../components/Input'
+
+import { Container, ContainerWrapper, Button, ButtonWrapper } from '../styles/pages'
+
 import mock from '../utils/mock'
+
 import { removeAccent } from "utils/removeAccent";
-
-
-import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-144966040-2"; // OUR_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
 
 export default function Home() {
   const [nls, setNls] = useState([]);
@@ -63,60 +54,50 @@ export default function Home() {
 
   return (
     <>
-      <SafeEnvironment />
-      <PageTitle
-        description={"Conheça as Notas de leiturista"}
-      />
+      <Header />
 
       <Container>
-        <FormElementsContainer>
-          <TextField
-            label={"Pesquise pela NL (ex: embaçado)"}
-            fullWidth
-            variant={"outlined"}
-            value={searchValue}
-            onChange={handleChange}
-          />
+        <TextField
+          placeholder="Pesquise pela NL (ex: embaçado)"
+          value={searchValue}
+          onChange={handleChange}
+        />
+        <ContainerWrapper>
+          {filteredPosts.length > 0 && (
+            <>
+              {filteredPosts.map((nl, index) => (
+                <UserInformation
+                  key={index}
+                  name={nl.name}
+                  description={nl.description}
+                  reading={nl.reading}
+                  obervacao={nl.obervacao}
+                  img={nl.img}
+                />
+              ))}
+            </>
+          )}
 
-        </FormElementsContainer>
-        <NlsPaper>
-          <NlsContainer>
-            {filteredPosts.length > 0 && (
-              <>
-                {filteredPosts.map((nl, index) => (
-                  <UserInformation
-                    key={index}
-                    name={nl.name}
-                    description={nl.description}
-                    reading={nl.reading}
-                    obervacao={nl.obervacao}
-                    img={nl.img}
-                  />
-                ))}
-              </>
-            )}
-            {filteredPosts.length === 0 && (
-              <>
-                {<Typography color={"error"}>NL não encontrado =(</Typography>}
-              </>
-            )}
-          </NlsContainer>
+        </ContainerWrapper>
 
-          <Container sx={{ textAlign: "center" }}>
-            {!searchValue && (
-              <Button
-                variant={"contained"}
-                color={"primary"}
-                sx={{ mt: 5 }}
-                onClick={loadMorePosts}
-                disabled={noMorePosts}
-              >
-                Ver Mais
-              </Button>
-            )}
-          </Container>
-        </NlsPaper>
+        {filteredPosts.length === 0 && (
+          <>
+            {/* {<Typography color={"error"}>NL não encontrado =(</Typography>} */}
+          </>
+        )}
+
+        <ButtonWrapper>
+          {!searchValue && (
+            <Button
+              onClick={loadMorePosts}
+              disabled={noMorePosts}
+            >
+              ↓
+            </Button>
+          )}
+        </ButtonWrapper>
+
       </Container>
     </>
-  );
+  )
 }

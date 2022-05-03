@@ -1,14 +1,7 @@
-import "@styles/globals.css";
-import { ThemeProvider } from "@material-ui/core";
-
-import theme from "ui/themes";
 import Head from "next/head";
 
-import Footer from "ui/components/surfaces/Footer";
-import { AppContainer } from "@styles/pages/container";
-
-
-
+import GlobalStyles from "assets/themes/global";
+import Footer from "components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -25,12 +18,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="manifest.json" />
 
       </Head>
-      <ThemeProvider theme={theme}>
-        <AppContainer>
-          <Component {...pageProps} />
-          <Footer />
-        </AppContainer>
-      </ThemeProvider>
+      <GlobalStyles />
+      <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

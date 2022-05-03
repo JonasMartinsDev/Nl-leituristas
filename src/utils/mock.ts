@@ -278,7 +278,7 @@ export default [
     id: 46,
     name: "6824",
     description:
-      "Calamidade não decretada/ Enchente alagamen/ Terrem/Vendaval-COVID-19",
+      "Calamidade não decretada/ Enchente alagamen/ Terrem/Vendaval",
     reading: false,
   },
   {
@@ -296,7 +296,7 @@ export default [
   {
     id: 49,
     name: "6872",
-    description: " Calamidade decretada/ Enchente alagamen/ Terrem/Vendaval ",
+    description: " Calamidade decretada/ Enchente alagamen/ Terrem/Vendaval-COVID-19",
     reading: false,
   },
   {
