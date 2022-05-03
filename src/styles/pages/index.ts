@@ -25,7 +25,6 @@ export const ContainerWrapper = styled.section`
 
 `
 
-
 export const ButtonWrapper = styled.div`
   text-align: center;
   width: 100%;

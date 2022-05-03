@@ -17,7 +17,7 @@ export default function Home() {
   const [nls, setNls] = useState([]);
   const [allNls, setAllNls] = useState([]);
   const [page, setPage] = useState(0);
-  const [postsPerPage] = useState(20);
+  const [postsPerPage] = useState(10);
   const [searchValue, setSearchValue] = useState("");
 
   const handleLoadPosts = useCallback((page, postsPerPage) => {
@@ -82,7 +82,7 @@ export default function Home() {
 
         {filteredPosts.length === 0 && (
           <>
-            {/* {<Typography color={"error"}>NL não encontrado =(</Typography>} */}
+            {<h2>NL não encontrado =(</h2>}
           </>
         )}
 
