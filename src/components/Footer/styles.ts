@@ -4,9 +4,7 @@ import styled from "styled-components";
 export const FooterStyled = styled.footer`
   grid-area: footer;
   text-align: center;
-  padding: 2rem 0;
-  margin: 0  auto;
-
+  padding: 1rem 0;
 `;
 
 export const FooterContainer = styled.div`
