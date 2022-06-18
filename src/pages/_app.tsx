@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 import GlobalStyles from "assets/themes/global";
-import Footer from "components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -20,7 +19,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
-      <Footer />
     </>
   );
 }

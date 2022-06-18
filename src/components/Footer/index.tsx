@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <FooterStyled>
       <FooterContainer>
+
         <p >
           NL-Leiturista te ajuda a encontrar as Notas de leiturista perfeita
           para cada situação de sua tarefa.

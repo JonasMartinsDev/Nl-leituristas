@@ -1,10 +1,28 @@
 import styled from 'styled-components'
 
-export const Container = styled.main`
- margin: 0 auto;
- max-width: 1200px;
+export const Container = styled.div`
  width: 100%;
- padding: 0 1rem;
+ height: 100vh;
+ max-width: 1200px;
+ margin: 0 auto;
+
+
+
+ display: grid;
+ grid-template-rows: 10rem auto;
+ grid-template-areas:
+  "header"
+  "content"
+  "footer"
+  ;
+
+
+  > main {
+    grid-area: content;
+    overflow-y: scroll;
+    padding: 0 1rem;
+  }
+ 
 `
 
 export const ContainerWrapper = styled.section`

@@ -5,13 +5,12 @@ import { Header } from "components/Header";
 import UserInformation from "components/UserInformation";
 
 
-import { TextField } from '../components/Input'
-
 import { Container, ContainerWrapper, Button, ButtonWrapper } from '../styles/pages'
 
 import mock from '../utils/mock'
 
 import { removeAccent } from "utils/removeAccent";
+import Footer from "components/Footer";
 
 export default function Home() {
   const [nls, setNls] = useState([]);
@@ -53,15 +52,10 @@ export default function Home() {
     : nls;
 
   return (
-    <>
-      <Header />
-
       <Container>
-        <TextField
-          placeholder="Pesquise pela NL (ex: embaçado)"
-          value={searchValue}
-          onChange={handleChange}
-        />
+      <Header searchValue={searchValue} handleChange={handleChange}/>
+
+        <main>
         <ContainerWrapper>
           {filteredPosts.length > 0 && (
             <>
@@ -97,7 +91,8 @@ export default function Home() {
           )}
         </ButtonWrapper>
 
+        </main>
+        <Footer />
       </Container>
-    </>
   )
 }

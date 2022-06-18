@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const Input = styled.input`
+  margin-top: 1rem;
   height: 60px;
   width: 100%;
 
@@ -17,5 +18,8 @@ export const Input = styled.input`
   outline: none;
   color: #eff2f6;
 
+  @media (max-width:600px) {
+    height: 50px;
+  }
 
 `

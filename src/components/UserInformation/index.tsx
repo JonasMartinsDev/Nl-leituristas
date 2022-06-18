@@ -1,5 +1,6 @@
 import { ModalExample } from "components/ModalExample";
 import React from "react";
+
 import {
   UserInformationContainer,
   UserName,

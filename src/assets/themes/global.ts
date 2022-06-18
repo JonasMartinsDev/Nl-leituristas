@@ -36,4 +36,23 @@ export default createGlobalStyle`
     }
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  
+  border-radius: 10rem;
+  background: #090c10;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4aff92;
+  border-radius: 3px;
+}
+
 `;
