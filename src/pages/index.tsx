@@ -54,7 +54,6 @@ export default function Home() {
     })
     : nls;
 
-  console.log(filteredPosts)
 
   return (
       <Container>
