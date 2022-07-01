@@ -13,8 +13,7 @@ export const UserInformationContainer = styled.div`
   grid-template-areas:
   "avatar name"
   "avatar rating"
-  "avatar description"
-  "instrucao  instrucao";
+  "avatar description";
 
   padding: 1rem;
   gap: 0.6rem  0.8rem;
@@ -44,15 +43,6 @@ export const UserDescription = styled.div`
   grid-area: description;
   color: #93a1b6;
   font-size: 0.9rem;
-`
-
-
-export const Instruction = styled.button`
- grid-area: instrucao;
-
- border: 0;
- background: transparent;
- color:#e89797;
 `
 
 

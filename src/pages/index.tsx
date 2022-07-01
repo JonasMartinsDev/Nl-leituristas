@@ -46,10 +46,15 @@ export default function Home() {
   const noMorePosts = page + postsPerPage >= allNls.length;
   const filteredPosts = searchValue
     ? allNls.filter((post) => {
-      return removeAccent(post.description)
+      const description = removeAccent(post.description)
         .includes(removeAccent(searchValue));
+
+      return description;
+      
     })
     : nls;
+
+  console.log(filteredPosts)
 
   return (
       <Container>
@@ -62,11 +67,9 @@ export default function Home() {
               {filteredPosts.map((nl, index) => (
                 <UserInformation
                   key={index}
-                  name={nl.name}
+                  name={nl.nota}
                   description={nl.description}
                   reading={nl.reading}
-                  obervacao={nl.obervacao}
-                  img={nl.img}
                 />
               ))}
             </>
