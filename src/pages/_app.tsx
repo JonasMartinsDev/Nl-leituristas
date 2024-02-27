@@ -2,6 +2,9 @@ import Head from "next/head";
 
 import GlobalStyles from "assets/themes/global";
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -14,6 +17,7 @@ function MyApp({ Component, pageProps }) {
     </Head>
       <GlobalStyles />
       <Component {...pageProps} />
+      <SpeedInsights />
     </>
   );
 }
